@@ -1,0 +1,40 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/dm",
+    "crates/dm-core",
+    "crates/dm-wiki",
+    "crates/dm-claude",
+    "crates/dm-api",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+authors = ["D&D AI DM Contributors"]
+
+[workspace.dependencies]
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_yaml = "0.9"
+axum = "0.7"
+anyhow = "1"
+thiserror = "1"
+rand = "0.8"
+proptest = "1"
+clap = { version = "4", features = ["derive"] }
+chrono = { version = "0.4", default-features = false, features = ["clock", "serde"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+
+dm-core = { path = "crates/dm-core" }
+dm-wiki = { path = "crates/dm-wiki" }
+dm-claude = { path = "crates/dm-claude" }
+
+[workspace.lints.rust]
+unused_imports = "warn"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

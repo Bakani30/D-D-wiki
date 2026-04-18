@@ -1,0 +1,148 @@
+# LMoP Scene Manifest — Goblin Arrows (Part 1)
+#
+# HOW TO USE:
+#   cargo run --bin dm -- encounter lmop --manifest campaigns/lmop/scenes/manifest.yaml --seed 42
+#
+# Entity IDs: PCs = 1-9, recurring NPCs = 10-99, enemies = 101+
+
+entry: scene_02
+
+scenes:
+
+  # ── Scene 1: Intro / journey briefing (no combat) ───────────────────────────
+  - id: scene_01
+    title: "บทที่ 1: ลูกศรของก๊อบลิน"
+    description: >
+      ในเมืองเนเวอร์วินเทอร์ ดวอร์ฟนามว่า กันเดรน ร็อคซีคเกอร์ ได้ขอให้พวกคุณนำเกวียนบรรทุกเสบียงและอุปกรณ์จำเป็น
+      ไปส่งที่เมืองแฟนดูลิน ห่างไปทางตะวันออกเฉียงใต้สองสามวัน กันเดรนจะจ่ายให้คนละ 10 GP
+      เพื่ออารักขาเกวียนไปที่ร้านเสบียงของบาร์เทนอย่างปลอดภัย
+      เขาขี่ม้าล่วงหน้าไปพร้อมกับซิลดาร์ ฮอลวินเทอร์เพื่อ "จัดการธุระ"
+    entities: []
+    next: scene_02
+
+  # ── Scene 2: Goblin Ambush — COMBAT ─────────────────────────────────────────
+  - id: scene_02
+    title: "ก๊อบลินซุ่มโจมตี (Goblin Ambush)"
+    description: >
+      คุณอยู่บนทางเกวียนไตรบอร์มาราวครึ่งวัน เมื่อคุณถึงทางโค้ง
+      คุณก็สังเกตเห็นม้าตายสองตัวอยู่ด้านหน้าห่างไปราว 50 ฟุต ขวางทางอยู่
+      แต่ละตัวมีลูกธนูสีดำปักติดอยู่ ไม้ป่าบีบทางตรงนี้ให้แคบลงและมีพุ่มไม้หนาทั้งสองข้างทาง
+    entities:
+      # ── Player Characters ────────────────────────────────────────────────────
+      - id: 1
+        name: Shalefire Stoutheart
+        side: pcs
+        ac: 16
+        hp: 13
+        max_hp: 13
+        initiative_bonus: 1
+        attacks:
+          - name: Handaxe
+            attack_bonus: 6
+            damage_dice: "1d6+4"
+            damage_type: slashing
+
+      - id: 2
+        name: Noorah Eldenfield
+        side: pcs
+        ac: 14
+        hp: 11
+        max_hp: 11
+        initiative_bonus: 3
+        attacks:
+          - name: Shortsword
+            attack_bonus: 5
+            damage_dice: "1d6+3"
+            damage_type: piercing
+
+      - id: 3
+        name: Gallantine Birchenbough
+        side: pcs
+        ac: 12
+        hp: 9
+        max_hp: 9
+        initiative_bonus: 2
+        attacks:
+          - name: Fire Bolt
+            attack_bonus: 5
+            damage_dice: "7"
+            damage_type: fire
+
+      - id: 4
+        name: Evandon Haart
+        side: pcs
+        ac: 14
+        hp: 11
+        max_hp: 11
+        initiative_bonus: 1
+        attacks:
+          - name: Mace
+            attack_bonus: 5
+            damage_dice: "1d6+3"
+            damage_type: bludgeoning
+
+      # ── Enemies: 4 Goblins (MM p.166 — extracted from ภาคผนวก B) ────────────
+      # AC 15, HP 7, init +2, Scimitar +4 1d6+2 slashing, Shortbow +4 1d6+2 piercing
+      - id: 101
+        name: "ก็อบลิน 1 (Goblin 1)"
+        side: enemies
+        ac: 15
+        hp: 7
+        max_hp: 7
+        initiative_bonus: 2
+        attacks:
+          - name: Scimitar
+            attack_bonus: 4
+            damage_dice: "1d6+2"
+            damage_type: slashing
+
+      - id: 102
+        name: "ก็อบลิน 2 (Goblin 2)"
+        side: enemies
+        ac: 15
+        hp: 7
+        max_hp: 7
+        initiative_bonus: 2
+        attacks:
+          - name: Scimitar
+            attack_bonus: 4
+            damage_dice: "1d6+2"
+            damage_type: slashing
+
+      - id: 103
+        name: "ก็อบลิน 3 (Goblin 3)"
+        side: enemies
+        ac: 15
+        hp: 7
+        max_hp: 7
+        initiative_bonus: 2
+        attacks:
+          - name: Shortbow
+            attack_bonus: 4
+            damage_dice: "1d6+2"
+            damage_type: piercing
+
+      - id: 104
+        name: "ก็อบลิน 4 (Goblin 4)"
+        side: enemies
+        ac: 15
+        hp: 7
+        max_hp: 7
+        initiative_bonus: 2
+        attacks:
+          - name: Shortbow
+            attack_bonus: 4
+            damage_dice: "1d6+2"
+            damage_type: piercing
+
+    next: scene_03
+
+  # ── Scene 3: Cragmaw Hideout (stub) ─────────────────────────────────────────
+  - id: scene_03
+    title: "ที่ซ่อนของแคร็กมาว (Cragmaw Hideout)"
+    description: >
+      ถ้ำปากกว้างท่ามกลางหินผา มีร่องรอยก็อบลินนับสิบตัวอาศัยอยู่ภายใน
+      เสียงน้ำไหลจากลำธารเล็กๆ ทางเหนือ กลิ่นควันไฟและกลิ่นสัตว์โชยมา
+      ผู้เล่นต้องหาทางเข้าและช่วยเหลือ Sildar Hallwinter ที่ถูกจับตัวไว้
+    entities: []
+    next: null

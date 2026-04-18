@@ -1,0 +1,79 @@
+{
+  "best_global_step": 1500,
+  "best_metric": 4.144912963965908e-05,
+  "best_model_checkpoint": "py-tools/intent_classifier/models/checkpoints/checkpoint-1500",
+  "epoch": 3.0,
+  "eval_steps": 500,
+  "global_step": 1500,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 1.0,
+      "grad_norm": 0.008532602339982986,
+      "learning_rate": 3.7525e-05,
+      "loss": 0.17251866149902345,
+      "step": 500
+    },
+    {
+      "epoch": 1.0,
+      "eval_loss": 0.0019561012741178274,
+      "eval_runtime": 31.7548,
+      "eval_samples_per_second": 62.983,
+      "eval_steps_per_second": 3.936,
+      "step": 500
+    },
+    {
+      "epoch": 2.0,
+      "grad_norm": 0.0018725247355177999,
+      "learning_rate": 2.5025e-05,
+      "loss": 0.01414171314239502,
+      "step": 1000
+    },
+    {
+      "epoch": 2.0,
+      "eval_loss": 8.944237924879417e-05,
+      "eval_runtime": 41.0019,
+      "eval_samples_per_second": 48.778,
+      "eval_steps_per_second": 3.049,
+      "step": 1000
+    },
+    {
+      "epoch": 3.0,
+      "grad_norm": 0.0009640482603572309,
+      "learning_rate": 1.2525000000000001e-05,
+      "loss": 0.0018446667194366455,
+      "step": 1500
+    },
+    {
+      "epoch": 3.0,
+      "eval_loss": 4.144912963965908e-05,
+      "eval_runtime": 22.6002,
+      "eval_samples_per_second": 88.495,
+      "eval_steps_per_second": 5.531,
+      "step": 1500
+    }
+  ],
+  "logging_steps": 500,
+  "max_steps": 2000,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 4,
+  "save_steps": 500,
+  "stateful_callbacks": {
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": false
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 789347340288000.0,
+  "train_batch_size": 16,
+  "trial_name": null,
+  "trial_params": null
+}

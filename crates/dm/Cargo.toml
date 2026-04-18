@@ -1,0 +1,20 @@
+[package]
+name = "dm"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[[bin]]
+name = "dm"
+path = "src/main.rs"
+
+[dependencies]
+dm-core.workspace = true
+dm-wiki.workspace = true
+dm-claude.workspace = true
+anyhow.workspace = true
+clap.workspace = true
+rand.workspace = true
+serde_yaml.workspace = true
+tokio.workspace = true

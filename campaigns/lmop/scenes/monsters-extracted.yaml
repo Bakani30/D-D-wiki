@@ -1,0 +1,360 @@
+- id: 101
+  name: บักแบร์ (Bugbear)
+  side: enemies
+  ac: 16
+  hp: 27
+  max_hp: 27
+  initiative_bonus: 2
+  attacks:
+  - name: Morningstar
+    attack_bonus: 4
+    damage_dice: 2d8+2
+    damage_type: piercing
+- id: 102
+  name: สามัญชน (Commoner)
+  side: enemies
+  ac: 10
+  hp: 4
+  max_hp: 4
+  initiative_bonus: 0
+  attacks: []
+- id: 103
+  name: สาวกลัทธิ (Cultist)
+  side: enemies
+  ac: 12
+  hp: 9
+  max_hp: 9
+  initiative_bonus: 1
+  attacks:
+  - name: Scimitar
+    attack_bonus: 3
+    damage_dice: 1d6+1
+    damage_type: slashing
+- id: 104
+  name: ดอปเปิลแกงเกอร์ (Doppelganger)
+  side: enemies
+  ac: 14
+  hp: 52
+  max_hp: 52
+  initiative_bonus: 4
+  attacks:
+  - name: Slam
+    attack_bonus: 6
+    damage_dice: 1d6+4
+    damage_type: bludgeoning
+- id: 105
+  name: นักเวทย์ชั่วร้าย (Evil Mage)
+  side: enemies
+  ac: 12
+  hp: 22
+  max_hp: 22
+  initiative_bonus: 2
+  attacks:
+  - name: Quarterstaff
+    attack_bonus: 1
+    damage_dice: 1d8-1
+    damage_type: bludgeoning
+- id: 106
+  name: กะโหลกเพลิง (Flameskull)
+  side: enemies
+  ac: 13
+  hp: 40
+  max_hp: 40
+  initiative_bonus: 3
+  attacks:
+  - name: Fire Ray
+    attack_bonus: 5
+    damage_dice: 3d6
+    damage_type: fire
+- id: 107
+  name: กูล (Ghoul)
+  side: enemies
+  ac: 12
+  hp: 22
+  max_hp: 22
+  initiative_bonus: 2
+  attacks:
+  - name: Bite
+    attack_bonus: 2
+    damage_dice: 2d6+2
+    damage_type: piercing
+  - name: Claws
+    attack_bonus: 4
+    damage_dice: 2d4+2
+    damage_type: slashing
+- id: 108
+  name: แมงมุมยักษ์ (Giant Spider)
+  side: enemies
+  ac: 14
+  hp: 26
+  max_hp: 26
+  initiative_bonus: 3
+  attacks:
+  - name: Bite
+    attack_bonus: 5
+    damage_dice: 1d8+3
+    damage_type: piercing
+- id: 109
+  name: กอบลิน (Goblin)
+  side: enemies
+  ac: 15
+  hp: 7
+  max_hp: 7
+  initiative_bonus: 2
+  attacks:
+  - name: Scimitar
+    attack_bonus: 4
+    damage_dice: 1d6+2
+    damage_type: slashing
+  - name: Shortbow
+    attack_bonus: 4
+    damage_dice: 1d6+2
+    damage_type: piercing
+- id: 110
+  name: กริกค์ (Grick)
+  side: enemies
+  ac: 14
+  hp: 27
+  max_hp: 27
+  initiative_bonus: 2
+  attacks:
+  - name: Tentacles
+    attack_bonus: 4
+    damage_dice: 2d6+2
+    damage_type: slashing
+  - name: Beak
+    attack_bonus: 4
+    damage_dice: 1d6+2
+    damage_type: piercing
+- id: 111
+  name: ฮอบกอบลิน (Hobgoblin)
+  side: enemies
+  ac: 18
+  hp: 11
+  max_hp: 11
+  initiative_bonus: 1
+  attacks:
+  - name: Longsword
+    attack_bonus: 3
+    damage_dice: 1d8+1
+    damage_type: slashing
+  - name: Longbow
+    attack_bonus: 3
+    damage_dice: 1d8+1
+    damage_type: piercing
+- id: 112
+  name: วิญญาณร้ายมอร์เมสค์ (Mormesk the Wraith)
+  side: enemies
+  ac: 13
+  hp: 45
+  max_hp: 45
+  initiative_bonus: 3
+  attacks:
+  - name: Life Drain
+    attack_bonus: 5
+    damage_dice: 3d8+3
+    damage_type: necrotic
+- id: 113
+  name: แมงมุมดำเนซนาร์ (Nezznar the Black Spider)
+  side: enemies
+  ac: 11
+  hp: 27
+  max_hp: 27
+  initiative_bonus: 1
+  attacks:
+  - name: Spider Staff
+    attack_bonus: 1
+    damage_dice: 1d6-1
+    damage_type: poison
+- id: 114
+  name: โนธิค (Nothic)
+  side: enemies
+  ac: 15
+  hp: 45
+  max_hp: 45
+  initiative_bonus: 3
+  attacks:
+  - name: Claws
+    attack_bonus: 4
+    damage_dice: 1d6+3
+    damage_type: slashing
+- id: 115
+  name: เจลลี่เหลือง (Ochre Jelly)
+  side: enemies
+  ac: 8
+  hp: 45
+  max_hp: 45
+  initiative_bonus: -2
+  attacks:
+  - name: Pseudopod
+    attack_bonus: 4
+    damage_dice: 2d6+2
+    damage_type: acid
+- id: 116
+  name: โอเกอร์ (Ogre)
+  side: enemies
+  ac: 11
+  hp: 59
+  max_hp: 59
+  initiative_bonus: -1
+  attacks:
+  - name: Greatclub
+    attack_bonus: 6
+    damage_dice: 2d8+4
+    damage_type: bludgeoning
+  - name: Javelin
+    attack_bonus: 6
+    damage_dice: 2d6+4
+    damage_type: piercing
+- id: 117
+  name: ออร์ค (Orc)
+  side: enemies
+  ac: 13
+  hp: 15
+  max_hp: 15
+  initiative_bonus: 1
+  attacks:
+  - name: Greataxe
+    attack_bonus: 5
+    damage_dice: 1d12+3
+    damage_type: slashing
+  - name: Javelin
+    attack_bonus: 5
+    damage_dice: 1d6+3
+    damage_type: piercing
+- id: 118
+  name: หมีฮูก (Owlbear)
+  side: enemies
+  ac: 13
+  hp: 59
+  max_hp: 59
+  initiative_bonus: 1
+  attacks:
+  - name: Beak
+    attack_bonus: 7
+    damage_dice: 1d10+5
+    damage_type: piercing
+  - name: Claws
+    attack_bonus: 7
+    damage_dice: 2d8+5
+    damage_type: slashing
+- id: 119
+  name: โจรชุดแดง (Redbrand Ruffian)
+  side: enemies
+  ac: 14
+  hp: 16
+  max_hp: 16
+  initiative_bonus: 2
+  attacks:
+  - name: Shortsword
+    attack_bonus: 4
+    damage_dice: 1d6+2
+    damage_type: piercing
+- id: 120
+  name: ซิลดาร์ ฮอลวินเทอร์ (Sildar Hallwinter)
+  side: enemies
+  ac: 16
+  hp: 27
+  max_hp: 27
+  initiative_bonus: 0
+  attacks:
+  - name: Longsword
+    attack_bonus: 3
+    damage_dice: 1d8+1
+    damage_type: slashing
+  - name: Heavy Crossbow
+    attack_bonus: 2
+    damage_dice: 1d10
+    damage_type: piercing
+- id: 121
+  name: โครงกระดูก (Skeleton)
+  side: enemies
+  ac: 13
+  hp: 13
+  max_hp: 13
+  initiative_bonus: 2
+  attacks:
+  - name: Shortsword
+    attack_bonus: 4
+    damage_dice: 1d6+2
+    damage_type: piercing
+  - name: Shortbow
+    attack_bonus: 4
+    damage_dice: 1d6+2
+    damage_type: piercing
+- id: 122
+  name: สเปคเทเตอร์ (Spectator)
+  side: enemies
+  ac: 39
+  hp: 39
+  max_hp: 39
+  initiative_bonus: 2
+  attacks:
+  - name: Bite
+    attack_bonus: 1
+    damage_dice: 1d6-1
+    damage_type: piercing
+- id: 123
+  name: สเติร์จ (Stirge)
+  side: enemies
+  ac: 14
+  hp: 2
+  max_hp: 2
+  initiative_bonus: 3
+  attacks:
+  - name: Blood Drain
+    attack_bonus: 5
+    damage_dice: 1d4+3
+    damage_type: piercing
+- id: 124
+  name: กิ่งไม้ปีศาจ (Twig Blight)
+  side: enemies
+  ac: 13
+  hp: 4
+  max_hp: 4
+  initiative_bonus: 1
+  attacks:
+  - name: Claws
+    attack_bonus: 3
+    damage_dice: 1d4+1
+    damage_type: piercing
+- id: 125
+  name: หมาป่า (Wolf)
+  side: enemies
+  ac: 13
+  hp: 11
+  max_hp: 11
+  initiative_bonus: 2
+  attacks:
+  - name: Bite
+    attack_bonus: 4
+    damage_dice: 2d4+2
+    damage_type: piercing
+- id: 126
+  name: มังกรเขียววัยเยาว์ (Young Green Dragon)
+  side: enemies
+  ac: 18
+  hp: 136
+  max_hp: 136
+  initiative_bonus: 1
+  attacks:
+  - name: Bite
+    attack_bonus: 7
+    damage_dice: 2d10+4
+    damage_type: poison
+  - name: Claw
+    attack_bonus: 7
+    damage_dice: 2d6+4
+    damage_type: slashing
+- id: 127
+  name: ซอมบี (Zombie)
+  side: enemies
+  ac: 8
+  hp: 22
+  max_hp: 22
+  initiative_bonus: -2
+  attacks:
+  - name: Slam
+    attack_bonus: 3
+    damage_dice: 1d6+1
+    damage_type: bludgeoning
